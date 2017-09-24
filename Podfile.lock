@@ -1,0 +1,15 @@
+PODS:
+  - AVOSCloud (7.1.0)
+  - Masonry (1.0.2)
+
+DEPENDENCIES:
+  - AVOSCloud
+  - Masonry
+
+SPEC CHECKSUMS:
+  AVOSCloud: 8eebafb173f584c00a3ff68b0c98b9de3688da65
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+
+PODFILE CHECKSUM: 1508e2b467b6139082fa3562f9f738d0a0ffda09
+
+COCOAPODS: 1.2.0
