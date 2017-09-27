@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <AVOSCloud/AVOSCloud.h>
+#import <AFNetworking/AFNetworking.h>
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *bgImageView;//背景图片
@@ -19,6 +20,7 @@
 - (IBAction)loginButton:(UIButton *)sender;
 - (void)logOfTextSend;
 - (void)login;
+- (void)getData;
 @property (nonatomic,strong) NSArray<AVObject *> *searchResult;
 
 @end
@@ -32,6 +34,7 @@
     _transParentView.backgroundColor = [UIColor colorWithRed:220/225 green:220/225 blue:220/225 alpha:0.5];
     self.isBool = false;
     NSLog(@"hello world");
+    [self getData];
    // self.logOfTextSend;
     // Do any additional setup after loading the view, typically from a nib.
 }
@@ -96,6 +99,28 @@
         UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"cell"];
          [self presentViewController:vc animated:YES completion:nil];
     }
+}
+
+- (void) getData
+{
+    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+    AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
+    
+    NSURL *URL = [NSURL URLWithString:@"https://api.map.baidu.com/location/ip?ak=6imoN8a44I7y8kmuvxn2WDSo4UPDKdMH&mcode=bloc.io.UU&coor=bd09ll/get"];
+    NSURLRequest *request = [NSURLRequest requestWithURL:URL];
+    
+    NSURLSessionDataTask *dataTask = [manager dataTaskWithRequest:request completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
+        if (error){
+            NSLog(@"error:%@",error);
+        }else{
+             //NSLog(@"%@ ",  responseObject);
+            
+            //json解析
+            NSDictionary *dict = (NSDictionary *)responseObject;
+            NSLog(@"one=%@",dict[@"address"]);
+        }
+    }];
+    [dataTask resume];
 }
 
 @end

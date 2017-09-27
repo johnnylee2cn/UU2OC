@@ -10,6 +10,7 @@
 		6DA201972BF3834F9A4C525C /* Pods_UU_O.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82CCD38A4B4098436861FBE5 /* Pods_UU_O.framework */; };
 		8478C5721F613D8300B575B4 /* notoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8478C5711F613D8300B575B4 /* notoViewController.m */; };
 		8478C5751F62382100B575B4 /* notoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8478C5741F62382100B575B4 /* notoTableViewCell.m */; };
+		8495EC441F7A219D00691DF3 /* collectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8495EC431F7A219D00691DF3 /* collectionViewController.m */; };
 		84C9526E1F4B206C00068750 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C9526D1F4B206C00068750 /* main.m */; };
 		84C952711F4B206D00068750 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C952701F4B206D00068750 /* AppDelegate.m */; };
 		84C952741F4B206D00068750 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C952731F4B206D00068750 /* ViewController.m */; };
@@ -28,6 +29,8 @@
 		8478C5711F613D8300B575B4 /* notoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = notoViewController.m; sourceTree = "<group>"; };
 		8478C5731F62382100B575B4 /* notoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = notoTableViewCell.h; sourceTree = "<group>"; };
 		8478C5741F62382100B575B4 /* notoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = notoTableViewCell.m; sourceTree = "<group>"; };
+		8495EC421F7A219D00691DF3 /* collectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = collectionViewController.h; sourceTree = "<group>"; };
+		8495EC431F7A219D00691DF3 /* collectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = collectionViewController.m; sourceTree = "<group>"; };
 		84C952691F4B206C00068750 /* UU-O.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UU-O.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C9526D1F4B206C00068750 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		84C9526F1F4B206D00068750 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -92,6 +95,8 @@
 				8478C5711F613D8300B575B4 /* notoViewController.m */,
 				8478C5731F62382100B575B4 /* notoTableViewCell.h */,
 				8478C5741F62382100B575B4 /* notoTableViewCell.m */,
+				8495EC421F7A219D00691DF3 /* collectionViewController.h */,
+				8495EC431F7A219D00691DF3 /* collectionViewController.m */,
 			);
 			path = "UU-O";
 			sourceTree = "<group>";
@@ -244,6 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8495EC441F7A219D00691DF3 /* collectionViewController.m in Sources */,
 				8478C5721F613D8300B575B4 /* notoViewController.m in Sources */,
 				8478C5751F62382100B575B4 /* notoTableViewCell.m in Sources */,
 				84C952741F4B206D00068750 /* ViewController.m in Sources */,
